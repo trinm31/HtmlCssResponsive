@@ -1,0 +1,658 @@
+/*===========================TABLE OF CONTENT=============================
+1,Reset
+2,Header
+3,Banner
+4,Brand
+5,Gear
+6,Camping
+8,Instagram
+9,Sucbribe
+10,Description
+11,Footer
+*/
+
+
+/*===========================1,RESET===================================*/
+
+html {
+    font-size: 62.5%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.dflex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.xm-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*====================================2,HEADER===============================*/
+
+.wrapper {
+    overflow: hidden;
+}
+
+.header .header-top {
+    padding: 1rem;
+    background-color: #f5f1ec;
+}
+
+.header .header-top .header-contact .header-left .infor {
+    color: #444;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.header .header-top .header-contact .header-left .infor .address p {
+    margin-left: 1rem;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.header .header-top .header-contact .header-right i {
+    margin-left: 1.5rem;
+    color: #fff;
+    background-color: #444444;
+    width: 2.4rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 400;
+    font-size: 1.5rem;
+    transition: 0.4s;
+}
+
+.header .header-top .header-contact .header-right i:hover {
+    background-color: #fe7e4c;
+}
+
+.header .header-bottom {
+    padding: 3rem 0;
+}
+
+.header .header-bottom .header-nav .logo img {
+    width: 50%;
+    
+}
+
+.header .header-bottom .header-nav .menu-list li {
+    margin-right: 3rem;
+}
+
+.header .header-bottom .header-nav .menu-list li a {
+    padding: 6rem 0;
+    font-size: 1.5rem;
+    color: #444444;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+
+.header .header-bottom .header-nav .menu-list li i {
+    padding-left: 1rem;
+}
+
+.header .header-bottom .header-nav .menu-list li a:hover {
+    color: #fe7e4c;
+}
+
+.header .bar i {
+    display: none;
+    font-size: 3rem;
+    color: #444444;
+    font-weight: 900;
+}
+
+@media (max-width: 991px) {
+    .header .header-top {
+        background-color: #fff;
+    }
+    .header .bar i {
+        display: block;
+    }
+    .header .header-top .header-contact {
+        display: none;
+    }
+    .header .header-bottom .header-nav .menu-list {
+        display: none;
+    }
+}
+
+
+/*=============================3,BANNER==========================*/
+
+.banner {
+    background-image: url(../img/malcolm-lightbody.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.banner .banner-infor .previous-slide a {
+    color: #a9a9a9;
+    font-size: 3rem;
+}
+
+.banner .banner-infor .content .title h2 {
+    color: #fe7e4c;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.banner .banner-infor .content .describe p:first-child {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.banner .banner-infor .content .describe p:last-child {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 300;
+    font-family: sans-serif;
+}
+                
+.banner .banner-infor .banner-button {
+    padding-top: 3rem;
+}
+
+.banner .banner-infor .banner-button .button-shop {
+    margin-right: 2rem;
+}
+
+.banner .banner-infor .banner-button .button-shop a {
+    padding: 1.7rem 2.8rem;
+    background-color: #fe7e4c;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+}
+
+.banner .banner-infor .banner-button .button-shop a:hover {
+    background-color: transparent;
+    border: 2px solid #fe7e4c;
+    color: #fe7e4c;
+}
+
+.banner .banner-infor .banner-button .button-story a {
+    padding: 1.5rem 2.8rem;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+
+.banner .banner-infor .banner-button .button-story a:hover {
+    background-color: white;
+    color: black;
+}
+
+.banner .banner-infor .next-slide a {
+    color: #a9a9a9;
+    font-size: 3rem;
+}
+
+@media (max-width: 567px) {
+    .banner .banner-infor .banner-button {
+        display: block;
+    }
+    .banner .banner-infor .banner-button .button-story {
+        margin-top: 5rem;
+    }
+    .banner .banner-infor .content .describe p:first-child {
+        font-size: 3rem;
+    }
+}
+
+
+/*=================================4,BRAND====================*/
+
+.brand {
+    padding: 8rem 0;
+}
+
+.brand .brand-title span {
+    color: #fe7e4c;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.brand .brand-title h2 {
+    margin: 1.6rem 0;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #444444;
+}
+
+.brand .brand-title p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #787878;
+    font-size: 1.6rem;
+}
+
+.brand .brand-img {
+    margin-top: 2rem;
+}
+
+
+/*=======================5,GEAR=========================*/
+
+.gear {
+    padding: 9rem 0;
+    background-color: #2a2a2a;
+}
+
+.gear .gear-title span {
+    font-size: 1.6rem;
+    color: #fe7e4c;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.gear .gear-title h2 {
+    margin: 2rem 0 3rem;
+    font-size: 3.2rem;
+    color: #efefef;
+    font-weight: 600;
+}
+
+.gear .gear-item .gear-content {
+    background: #f7f7f7;
+    padding: 2rem 2.5rem 3.5rem 2.5rem;
+}
+
+.gear .gear-item .gear-content .title h2 {
+    font-size: 2.4rem;
+    padding: 1.2rem 0;
+    font-weight: 600;
+    color: #444;
+}
+
+.gear .gear-item .gear-content .describe p {
+    color: #fe7e4c;
+    font-size: 2rem;
+    margin: 3px 0 5px 0;
+    font-weight: 400;
+}
+
+.gear .gear-item .gear-content .gear-button {
+    padding: 3rem 0;
+}
+
+.gear .gear-item .gear-content .gear-button a {
+    padding: 1.7rem 3.9rem;
+    background-color: #fe7e4c;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 767px) {
+    .gear .gear-item {
+        margin-bottom: 2rem;
+    }
+}
+
+
+/*================================6,CAMPING==========================*/
+
+.camping .block {
+    padding: 8rem;
+    margin: 0 -15px;
+}
+
+.camping .block .describe p {
+    font-size: 1.4rem;
+    color: #fe7e4c;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.camping .block .title h2 {
+    margin: 2rem 0;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #444444;
+}
+
+.camping .block .text p:first-child {
+    font-size: 1.8rem;
+    color: #787878;
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+}
+
+.camping .block .text p:last-child {
+    font-size: 1.8rem;
+    color: #787878;
+    font-weight: 400;
+}
+
+.camping .block-1 {
+    margin: 0 -15px;
+    background-image: url(../img/ian-keefe.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+}
+
+.camping .block-2 {
+    margin: 0 -15px;
+    background-image: url(../img/malte-wingen.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+}
+
+.camping .block-3 {
+    margin: 0 -15px;
+    background-image: url(../img/jonathan.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+}
+
+@media (max-width: 767px) {
+    .camping .block {
+        padding: 4rem;
+    }
+    .camping .block-1 {
+        height: 40vh;
+    }
+    .camping .block-2 {
+        height: 40vh;
+        margin-top: 2rem;
+    }
+    .camping .block-3 {
+        height: 40vh;
+    }
+}
+
+
+/*=======================8,INSTAGRAM======================*/
+
+.instagram {
+    padding: 5rem 0;
+}
+
+.instagram .insta-content {
+    padding: 3rem;
+}
+
+.instagram .insta-content .title h2 {
+    font-size: 3.2rem;
+    color: #444444;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 2rem;
+}
+
+.instagram .insta-content .describe p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #787878;
+    margin-bottom: 2rem;
+}
+
+.instagram .insta-content .insta-button {
+    padding-top: 3rem;
+}
+
+.instagram .insta-content .insta-button a {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1.8rem 3.8rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: #fe7e4c;
+}
+
+.instagram .insta-item {
+    padding: 3rem 0;
+}
+
+.instagram .insta-item .insta-img img {
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/*===========================9,SUBCRIBE========================*/
+
+.subcribe {
+    background-image: url(../img/andreas-wagner.jpg);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.subcribe .overlay {
+    background-color: #000000;
+    opacity: 0.66;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.subcribe .subcribe-content .title h2 {
+    font-size: 3.6rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.subcribe .subcribe-content .describe p {
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.subcribe .subcribe-content .form {
+    margin-top: 3.5rem;
+}
+
+.subcribe .subcribe-content .form .email {
+    padding: 1.2rem 8rem 1.2rem 2.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-top-left-radius: 4.5rem;
+    border-bottom-left-radius: 4.5rem;
+}
+
+.subcribe .subcribe-content .form .button {
+    padding: 1.2rem 3rem 1.2rem 2.6rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #fe7e4c;
+    border: none;
+    border-top-right-radius: 4.5rem;
+    border-bottom-right-radius: 4.5rem;
+}
+
+@media (max-width: 576px) {
+    .subcribe .subcribe-content .form .email {
+        padding: 1.2rem 4rem 1.2rem 0.5rem;
+    }
+    .subcribe .subcribe-content .form .button {
+        padding: 1.2rem 1.6rem 1.2rem 2rem;
+    }
+}
+
+
+/*=======================10,DESCRIPTION==================*/
+
+.description {
+    background-color: #e0e0e0;
+    padding: 9rem 0;
+}
+
+.description .leather .leather-img {
+    width: 50%;
+}
+
+.description .leather .describe p {
+    font-size: 1.7rem;
+    color: #787878;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
+.description .leather .descrip-icon i {
+    margin-right: 1.5rem;
+    color: #444444;
+    background-color: #fff;
+    width: 3.2rem;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.description .home .title h4 {
+    color: #444444;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.description .home .home-list li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.description .home .home-list li a:first-child {
+    color: #fe7e4c;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.description .home .home-list li a {
+    color: #fe7e4c;
+    font-size: 1.6rem;
+    font-size: 600;
+    margin: 1rem 0;
+    display: block;
+}
+
+.description .home .home-list li:last-child {
+    border-bottom: none;
+}
+
+.description .time-post .title h4 {
+    color: #444444;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.description .time-post .recent-list li {
+    margin-bottom: 1rem;
+}
+
+.description .time-post .recent-list li a {
+    color: #fe7e4c;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.description .time-post .recent-list li span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #787878;
+}
+
+.description .describe-insta .title h4 {
+    color: #444444;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.description .describe-insta .insta-item .insta-img img {
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 767px) {
+    .description .home {
+        margin: 2.5rem 0;
+    }
+    .description .time-post {
+        margin-bottom: 2.5rem;
+    }
+    .description {
+        padding: 4.5rem 0;
+    }
+}
+
+
+/*===========================11,FOOTER======================*/
+
+.footer {
+    background-color: #222222;
+    padding: 3rem 0;
+}
+
+.footer .footer-content p {
+    color: rgba(239, 239, 239, 0.33);
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 400;
+}
